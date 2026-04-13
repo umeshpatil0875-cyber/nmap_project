@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Risk Report - 66.254.114.223</title>
+  <style>
+    :root { color-scheme: light; --ink:#0f172a; --muted:#475569; --paper:#fffdf8; --panel:#fff; --line:#e2e8f0; --accent:#0f766e; --accent-2:#b45309; --shadow:0 20px 40px rgba(15,23,42,0.08); }
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: radial-gradient(circle at top left, #fef3c7 0, #fff7ed 32%, #f8fafc 100%); color: var(--ink); }
+    .page { max-width: 1120px; margin: 0 auto; padding: 32px; }
+    .hero { background: linear-gradient(135deg, rgba(15,118,110,0.95), rgba(180,83,9,0.9)); color: white; border-radius: 28px; padding: 28px; margin-bottom: 24px; box-shadow: var(--shadow); }
+    .card { background: var(--panel); border-radius: 22px; padding: 24px; box-shadow: var(--shadow); margin-bottom: 24px; border: 1px solid rgba(255,255,255,0.5); }
+    .headline { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+    .metric { min-width: 180px; }
+    .metric strong { display:block; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 8px; opacity: 0.8; }
+    .metric-value { font-size: 1.25rem; font-weight: 700; }
+    .critical { color: #9b2226; font-weight: 700; }
+    .high { color: #bb3e03; font-weight: 700; }
+    .medium { color: #ca6702; font-weight: 700; }
+    .low { color: #2a9d8f; font-weight: 700; }
+    .info { color: #277da1; font-weight: 700; }
+    h1, h2, h3 { margin-top: 0; }
+    .subtle { color: var(--muted); }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 12px; text-align: left; border-bottom: 1px solid #e5e7eb; vertical-align: top; }
+    th { background: #f8fafc; }
+    ul { margin: 0; padding-left: 20px; }
+    .grid { display: grid; gap: 24px; grid-template-columns: 2fr 1fr; }
+    @media (max-width: 880px) { .grid { grid-template-columns: 1fr; } .page { padding: 20px; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+  <div class="hero">
+    <h1>Target Risk Report</h1>
+    <p class="subtle" style="color:rgba(255,255,255,0.85);">Adaptive scan workflow, risk findings, and recon enrichment in one report.</p>
+  </div>
+  <div class="card">
+    <div class="headline">
+      <div class="metric"><strong>Host</strong><div class="metric-value">66.254.114.223</div></div>
+      <div class="metric"><strong>OS</strong><div class="metric-value">unknown</div></div>
+      <div class="metric"><strong>Open ports</strong><div class="metric-value">2</div></div>
+      <div class="metric"><strong>Risk score</strong><div class="metric-value">35</div></div>
+      <div class="metric"><strong>Overall severity</strong><div class="metric-value"><span class="high">HIGH</span></div></div>
+    </div>
+  </div>
+  <div class="grid">
+  <div>
+  <div class="card">
+    <h2>Findings</h2>
+    <table>
+      <thead>
+        <tr><th>Severity</th><th>Title</th><th>Port</th><th>Rationale</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class='sev high'>HIGH</td><td>Outdated service version: Apache httpd</td><td>80</td><td>Detected version 2.4.38 is older than recommended baseline 2.4.58.</td></tr>
+<tr><td class='sev high'>HIGH</td><td>CVE match: CVE-2021-41773</td><td>80</td><td>Apache HTTP Server path traversal and code execution risks affect vulnerable versions.</td></tr>
+<tr><td class='sev low'>LOW</td><td>OS fingerprint unavailable</td><td>-</td><td>Operating system data was not provided, reducing confidence in OS-specific risk checks.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+  <div>
+  <div class="card">
+    <h2>Recommended NSE Scripts</h2>
+    <ul>
+      <li>http-enum</li>
+<li>http-title</li>
+<li>http-vuln-cve2017-5638</li>
+<li>ssl-cert</li>
+<li>ssl-enum-ciphers</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2>Scan Workflow</h2>
+    <ul>
+      <li>No workflow metadata captured.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2>Recon Sources</h2>
+    <ul>
+      <li>No recon enrichment collected.</li>
+    </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html>

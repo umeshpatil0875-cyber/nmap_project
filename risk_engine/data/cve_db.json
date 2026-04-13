@@ -1,0 +1,34 @@
+[
+  {
+    "cve_id": "CVE-2011-2523",
+    "service": "ftp",
+    "product_contains": "vsftpd",
+    "affected_versions_lt": "3.0.5",
+    "severity": "high",
+    "summary": "Older vsftpd deployments may expose known security issues and should be reviewed."
+  },
+  {
+    "cve_id": "CVE-2017-7494",
+    "service": "smb",
+    "product_contains": "samba",
+    "affected_versions_lt": "4.6.5",
+    "severity": "critical",
+    "summary": "Samba versions below the fixed release line may allow remote code execution."
+  },
+  {
+    "cve_id": "CVE-2023-38408",
+    "service": "ssh",
+    "product_contains": "openssh",
+    "affected_versions_lt": "9.3.0",
+    "severity": "high",
+    "summary": "Affected OpenSSH agent forwarding paths should be reviewed on older deployments."
+  },
+  {
+    "cve_id": "CVE-2021-41773",
+    "service": "http",
+    "product_contains": "apache httpd",
+    "affected_versions_lt": "2.4.50",
+    "severity": "high",
+    "summary": "Apache HTTP Server path traversal and code execution risks affect vulnerable versions."
+  }
+]

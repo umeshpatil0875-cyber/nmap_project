@@ -1,0 +1,22 @@
+{
+  "host": "192.168.1.10",
+  "os_name": "Windows 7 Professional",
+  "ports": [
+    {
+      "port": 21,
+      "protocol": "tcp",
+      "service": "ftp",
+      "product": "vsftpd",
+      "version": "3.0.3",
+      "state": "open"
+    },
+    {
+      "port": 445,
+      "protocol": "tcp",
+      "service": "smb",
+      "product": "Samba smbd",
+      "version": "4.6.2",
+      "state": "open"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 [project]
 name = "nmap-risk-engine"
 version = "0.1.0"
-description = "Pure Python risk engine for analyzing parsed Nmap scan results"
+description = "Python workflow for Nmap scanning, recon enrichment, risk scoring, and reporting"
 requires-python = ">=3.10"
 
 [tool.unittest]
